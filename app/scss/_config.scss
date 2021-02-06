@@ -2,7 +2,7 @@
 
 $accent: orange; // Accent Color
 $fontsize: 16px; // Body Font Size
-$textcolor: #333; // Text Color
+$textcolor: #000C2D; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: CircularStd, sans-serif; // Roboto Font Family
 
@@ -65,4 +65,8 @@ body {
 	padding: 0 15px;
 	margin: 0 auto;
 	height: 100%;
+}
+
+a {
+	text-decoration: none;
 }

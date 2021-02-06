@@ -1,0 +1,52 @@
+.header {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		padding: 20px 0;
+	}
+	.menu__list {
+		display: flex;
+		justify-content: space-between;
+		list-style-type: none;
+		padding: 0;
+		&-item {
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 18px;
+			& + .menu__list-item {
+				margin-left: 30px;
+			}
+		}
+		&-link {
+			color: #000C2D;
+		}
+		&-btn {
+			padding: 12px 25px;
+			font-weight: 500;
+			color: #2F70FE;
+			font-size: 16px;
+			border: 1px solid #2F70FE;
+		}
+		&-registration {
+			color: #000C2D;
+			span {
+				margin-left: 5px;
+			}
+		}
+	}
+	&__content {
+		text-align: center;
+		background-image: url('../images/dest/bg.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+		height: 530px;
+	}
+	&__bottom {
+		background-image: url('../images/dest/bg-2.jpg');
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center;
+	}
+}
