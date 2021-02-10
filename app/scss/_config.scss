@@ -5,13 +5,16 @@ $fontsize: 16px; // Body Font Size
 $textcolor: #000C2D; // Text Color
 $system: -apple-system, BlinkMacSystemFont, Arial, sans-serif; // System Font Family
 $roboto: CircularStd, sans-serif; // Roboto Font Family
+$cubic: cubic-bezier(0.4, 0.01, 0.165, 0.99);
 
 // Bootstrap compatible gutter variable => $gutter
 $grid-gutter-width: 20px;
 $gutter: $grid-gutter-width;
 
+
 // IMPORT SECTION
 @import '../../node_modules/normalize.css/normalize.css';
+@import '../libs/hamburgers.css';
 // @import 'node_modules/bootstrap/scss/bootstrap-grid.scss'; // Optional Bootstrap Grid
 // @import 'node_modules/bootstrap/scss/utilities/_sizing.scss'; // Optional Bootstrap Utilites
 
