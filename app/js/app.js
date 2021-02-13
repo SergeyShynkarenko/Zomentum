@@ -9,4 +9,8 @@ $(function() {
 		$('.menu__list').removeClass('menu__list--active');
 	});
 
+	$('.hamburger').on('click', function() {
+		$('html').toggleClass('active');
+	});
+	
 });
