@@ -38,6 +38,10 @@ $gutter: $grid-gutter-width;
 
 // GENERAL DOCUMENT STYLES
 
+html.active {
+	overflow: hidden;
+}
+
 ::placeholder {
 	color: #666;
 }

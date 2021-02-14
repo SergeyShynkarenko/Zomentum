@@ -9,7 +9,7 @@
 		z-index: 5;
 		img {
 			@media (max-width: 500px) {
-				width: 75%;
+				width: 64%;
 			}
 		}
 	}
@@ -106,7 +106,6 @@
 		@media (max-width: 900px) {
 			z-index: 7;
 			display: flex;
-			flex-direction: row-reverse;
 			align-items: center;
 		}
 		.demo__btn {
@@ -126,8 +125,12 @@
 		}
 		.registration__btn {
 			color: $textcolor;
+			@media (max-width: 900px) {
+				margin-right: 30px;
+			}
 			@media (max-width: 500px) {
 				font-size: 14px;
+				margin-right: 0;
 			}
 		}
 	}
@@ -287,9 +290,7 @@
 	}
 }
 
-html.active {
-	overflow: hidden;
-}
+
 
 
 //program
