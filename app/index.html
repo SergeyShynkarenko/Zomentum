@@ -50,10 +50,10 @@
 
 					<div class="header__btn">
 						<a class="demo__btn" href="#">Get a demo</a>
-						<a class="registration__btn" href="#">
+						<button class="registration__btn" data-bs-toggle="modal" data-bs-target="#loginModal">
 							<img src="images/dest/register.svg" alt="Login">
 							<span>Login</span>
-						</a>
+						</button>
 					</div>
 				</div>
 			</div>
@@ -256,8 +256,36 @@
 		</div>
 	</footer>
 
-	<script src="js/app.min.js"></script>
+	<div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModal" aria-hidden="true">
+		<div class="modal-dialog modal-dialog-centered modal-md">
+			<div class="modal-content">
+				<div class="modal-header">
+					<h5 class="modal-title" id="loginModalLabel">Sign In</h5>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+				</div>
+				<div class="modal-body">
+					<form>
+						<div class="mb-3">
+							<label for="exampleInputEmail1" class="form-label">Email address</label>
+							<input type="email" class="form-control" id="exampleInputEmail1" arial-describedby="emailHelp" required>
+							<div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+						</div>
+						<div class="mb-3">
+							<label for="exampleInputPassword1" class="form-label">Password</label>
+							<input type="password" class="form-control" id="exampleInputPassword1" required>
+						</div>
+						<div class="mb-3 form-check">
+							<input type="checkbox" class="form-check-input" id="exampleCheck1">
+							<label for="form-check-label" for="exampleCheck1">Check me out</label>
+						</div>
+						<button class="btn btn-primary" type="submit">Submit</button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
 
+	<script src="js/app.min.js"></script>
 
 </body>
 </html>
